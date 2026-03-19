@@ -95,7 +95,7 @@ const updateProfile = async (body) => {
 
     useEffect(()=> {
         if(token){
-            axiosdefaults.headers.common["token"] = token;
+            axios.defaults.headers.common["token"] = token;
         }
         checkAuth();    
     }, [])
